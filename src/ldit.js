@@ -1,24 +1,17 @@
-var Server = require("./lib/Server");
-var Client = require("./lib/Client");
+var Socket = require("./lib/Socket");
 
 /**
  * 启动
  */
 function start() {
-    // 启动服务端
-    Server.start();
-    // 启动客户端
-    Client.start();
+    Socket.open();
 }
 
 /**
  * 停止
  */
 function stop() {
-    // 启动服务端
-    Server.stop();
-    // 启动客户端
-    Client.stop();
+    Socket.close();
 }
 
 module.exports = {
