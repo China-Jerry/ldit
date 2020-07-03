@@ -27,7 +27,16 @@ function start() {
     //定时向服务器发送消息
     var message = new Buffer("Hi");
     setInterval(function(){
-        client.send(message, 0, message.length, 12306, '255.255.255.255', function(err, bytes) {
+        client.send(message, 0, message.length, 12306, '193.255.255.255', function(err, bytes) {
+            // TODO
+        });
+        client.send(message, 0, message.length, 12306, '61.255.255.255', function(err, bytes) {
+            // TODO
+        });
+        client.send(message, 0, message.length, 12306, '202.255.255.255', function(err, bytes) {
+            // TODO
+        });
+        client.send(message, 0, message.length, 12306, '210.255.255.255', function(err, bytes) {
             // TODO
         });
     },3000);
