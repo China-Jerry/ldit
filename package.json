@@ -1,0 +1,25 @@
+{
+  "name": "ldit",
+  "version": "1.0.0",
+  "description": "Let's do it together",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ldit": "./bin/ldit.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/China-Jerry/ldit.git"
+  },
+  "keywords": [
+    "p2p"
+  ],
+  "author": "Jerry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/China-Jerry/ldit/issues"
+  },
+  "homepage": "https://github.com/China-Jerry/ldit#readme"
+}
