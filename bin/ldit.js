@@ -1,13 +1,17 @@
 #!/usr/bin/env node
+const ldit = require("../src/ldit");
 console.log("Let's do it together.");
 var cmd = process.argv[2];
 if(cmd){
     switch(cmd){
-        case "name":
+        case "start":
+            ldit.start();
             break;
-        case "site":
+        case "stop":
+            ldit.stop();
             break;
-        case "email":
+        default:
+            console.log("usage: ldit start|stop");
             break;
     }
 }
